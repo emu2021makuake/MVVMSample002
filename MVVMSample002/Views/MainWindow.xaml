@@ -1,0 +1,25 @@
+﻿<Window
+    x:Class="MVVMSample002.Views.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:MVVMSample002.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
+    xmlns:vm="clr-namespace:MVVMSample002.ViewModels"
+    Title="MainWindow"
+    Width="350"
+    Height="200"
+    d:DataContext="{d:DesignInstance vm:MainWindowViewModel,
+                                     IsDesignTimeCreatable=True}"
+    ui:WindowHelper.UseModernWindowStyle="True"
+    IsEnabled="{Binding IsFree}"
+    mc:Ignorable="d">
+    <StackPanel>
+        <Button
+            Margin="10"
+            Command="{Binding ExecCommand, Mode=OneTime}"
+            Content="Button" />
+        <TextBlock Margin="10" Text="{Binding Status}" />
+    </StackPanel>
+</Window>
