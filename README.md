@@ -1,5 +1,5 @@
 # MVVMSample002
-Microsoft.Toolkit.Mvvm WPF Sample 2 - async
+MVVM Toolkit (`Microsoft.Toolkit.Mvvm`) WPF Sample 2 - async
 
 AsyncRelayCommand Sample
 
