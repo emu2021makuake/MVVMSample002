@@ -1,5 +1,5 @@
 # MVVMSample002
-Microsoft.Toolkit.Mvvm WPF Sample 2 - async
+MVVM Toolkit (`Microsoft.Toolkit.Mvvm`) WPF Sample 2 - async
 
 AsyncRelayCommandのサンプル。
 ボタンを押すとしばらく処理中表示になり、処理完了する。
